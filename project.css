@@ -1,0 +1,221 @@
+a {
+    border: 2px;
+    border-style: solid;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fbff00;
+    font-style: sans-serif;
+    font-weight: 900;
+    animation-name: dinesh;
+    animation-duration: 7s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+
+
+}
+
+@keyframes dinesh {
+    0% {
+        background-color: #fbff00;
+    }
+
+    10% {
+        background-color: rgb(26, 255, 0);
+    }
+
+    20% {
+        background-color: rgb(255, 136, 0);
+    }
+
+    30% {
+        background-color: rgb(255, 0, 93);
+    }
+
+    40% {
+        background-color: blue;
+    }
+
+    50% {
+        background-color: rgb(0, 255, 238);
+    }
+
+    60% {
+        background-color: rgb(65, 65, 124);
+    }
+
+    70% {
+        background-color: rgb(201, 255, 5);
+    }
+
+    80% {
+        background-color: rgb(196, 17, 181);
+    }
+
+    90% {
+        background-color: rgb(12, 153, 246);
+    }
+
+    100% {
+        background-color: rgb(125, 176, 15);
+    }
+}
+
+body {
+    background-image: url(./4k\ bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: sans-serif;
+
+}
+
+pre {
+    color: antiquewhite;
+}
+
+table {
+    color: aliceblue;
+}
+
+form {
+    color: aliceblue;
+}
+
+legend {
+    color: aqua;
+}
+
+h1,
+h2,
+h3 {
+    color: white;
+}
+
+a:link {
+    color: aqua;
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    /* color: rgb(17, 17, 126);
+    background-color: chartreuse;  */
+    box-shadow: 0 12px 26px 0px rgb(255, 255, 255);
+}
+
+a:active {
+    color: aquamarine;
+    background-color: #fbff00;
+}
+
+div {
+    position: fixed;
+    top: 0px;
+    font-size: xx-small;
+    padding: 20px;
+}
+
+input {
+    background-color: aquamarine;
+
+}
+
+button {
+    background-color: aquamarine;
+}
+
+textarea {
+    background-color: aquamarine;
+}
+
+option {
+    background-color: rgb(251, 255, 0);
+}
+
+select {
+    background-color: aquamarine;
+}
+
+marquee::first-line {
+    font-family: "Honk", system-ui;
+
+}
+
+.tri {
+    border-radius: 50px;
+}
+
+img {
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    
+}
+img:hover{
+    transform: scale(1.2);
+    
+}
+.marquee{
+    
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+    width:100%;
+
+
+}
+
+
+
+ .marquee-container{
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee-text{
+            display: inline-block;
+            animation: move 10s linear infinite;
+            font-family: "Honk", system-ui;
+            font-size: 30px;
+        }
+
+        .marquee-text span{
+            padding-right: 50px;
+        }
+
+        @keyframes move{
+            from{
+                transform: translateX(100%);
+            }
+            to{
+                transform: translateX(-100%);
+            }
+        }
+/* 
+.marquee-container{
+    width: 100%;
+    overflow: hidden;
+}
+
+.marquee-text{
+    display: inline-block;
+    white-space: nowrap;
+    animation: move 10s linear infinite;
+    font-family: "Honk", system-ui;
+    font-size: 30px;
+}
+
+@keyframes move{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+} */

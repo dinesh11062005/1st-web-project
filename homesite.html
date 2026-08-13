@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="project.css">
+    <link rel="icon" href="./Purple and Black Modern Graphic Designer Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Honk:MORF@15&display=swap" rel="stylesheet">
+    <title>electronics</title>
+
+</head>
+
+<body>
+    <div><img src="./electronis_and_gadgets_logo-removebg-preview.png" alt="electronics" width="150" height="150">
+        <h2>Electronics and Gadgets</h2>
+    </div>
+    <center>
+        
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="homesite.html">HOME</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ABOUT.html">ABOUT</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ITEMS.html">ITEMS</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="CONTACT.html">CONTACT</a></h3>
+        <BR><BR><h2 id="time"></h2><BR><BR>
+        <center>
+            <H1>DJ electronics</H1>
+        </center>
+        <img src="./elec.jpg" alt="electronics" width="600" height="450" class="tri">
+        <br><br>
+        <br>
+        <hr>
+        <h2>
+            <marquee behavior="" direction="left" scrollamount="10" class="marquee">Today
+                offer!🐂🐄🐖🐏🐑🦙🐐🐂🐄🐖🐏🐑🦙🐐🐂🐄🐖🐏🐑🦙🐐Today
+                offer!👩‍🌾👨‍🌾🐂🐄🐖🐏🐑🦙🐐🐂🐄🐖🐏🐑🦙🐐🐂🐄🐖🐏🐑🦙🐐Today offer!</marquee>
+        </h2>
+        <hr>
+        <center>
+
+<h2 id="offer" style="color: rgb(0, 0, 0);"></h2>
+
+<a href="" onclick="offer();return false">click to get extra offers! </a>
+
+</center>
+        <br>
+        <h1>ITEMS</h1>
+        <h3>
+            <table border="0" cellpadding="25">
+                <h4>
+                    <tr>
+                        <td><img src="./ear pods.jpg" alt="ear pods" width="300" height="300" class="tri"></td>
+                        <td><img src="./keyboard.png" alt="" width="300" height="300" class="tri"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>ear phone<br><del>₹1800</del>&nbsp;&nbsp;<mark>₹1500</mark></center>
+                        </td>
+                        <td>
+                            <center>mouse<br><del>₹799</del>&nbsp;&nbsp;<mark>₹599</mark></center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="./unnamed.jpg" alt="" width="300" height="300" class="tri"></td>
+                        <td><img src="./wireless.jpg" alt="" width="300" height="300" class="tri"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>camera <br><del>₹50000</del>&nbsp;&nbsp;<mark>₹45000</mark></center>
+                        </td>
+                        <td>
+                            <center>ear buds<br><del>₹799</del>&nbsp;&nbsp;<mark>₹499</mark></center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="./drone.jpg" alt="" width="300" height="300" class="tri"></td>
+                        <td><img src="./whatch.jpg" alt="" width="300" height="300" class="tri"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>drone<br><del>₹70000</del>&nbsp;&nbsp;<mark>₹60000</mark></center>
+                        </td>
+                        <td>
+                            <center>watch<br><del>₹2999</del>&nbsp;&nbsp;<mark>₹1999</mark></center>
+                        </td>
+                    </tr>
+            </table>
+        </h3>
+
+
+    </center><br><br><br>
+    
+    <center>
+        <h2>
+           <a href="ABOUT.html">Next</a>
+        </h2>
+    </center><br><br>
+
+    <hr>
+    <h3>
+        <pre>© 2026 Dinesh J. All rights reserved. This project and its content may not be copied, reproduced, or distributed without permission.</pre>
+    </h3>
+    <hr>
+    <script>
+
+function offer()
+{
+    let offers = [
+        "10% Discount","20% Discount", "Free Earbuds","Free Delivery","Buy 1 Get 1"];
+        
+    let random =Math.floor(Math.random() * offers.length);
+    document.getElementById("offer").innerHTML = offers[random];
+   
+}
+setInterval(showTime,1000);
+
+function showTime()
+{
+    let date = new Date();
+
+    document.getElementById("time").innerHTML ="Time is : "+ date.toLocaleTimeString();
+}
+   
+</script>
+</body>
+
+</html>  

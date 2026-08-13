@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="project.css">
+    <title>form</title>
+</head>
+
+<body>
+    <center>
+        <h1>Contact details</h1>
+    </center>
+    <center>
+        
+        <fieldset style="width: 500px;">
+            <legend>Fill the below details</legend>
+            <form onsubmit="return   confirmSubmit() && submited() ">
+                <label for="">NAME:</label>
+                <input type="type" required><br><br>
+                <label for="">EMAIL:</label>
+                <input type="email" required><br><br>
+                <label for="">PHONE NO:</label>
+                <input type="tel" required id="phone"><br><br>
+                <label for="">DOB:</label>
+                <input type="date" required><br><br>
+                <label for="">STATE:</label>
+                <input list="STATE:" required>
+                <datalist id="STATE:">
+                    <option value="tamil nadu"></option>
+                    <option value="kerala"></option>
+                    <option value="andhra"></option>
+                    <option value="karnataka"></option>
+                </datalist><br><br>
+                <label for="">CITY:</label>
+                <select name="" id="">
+                    <option value="">CHENNAI</option>
+                    <option value="">ERODE</option>
+                    <option value="">DINDIGUL</option>
+                    <option value="">COIMBATORE</option>
+                    <option value="">ARIYALUR</option>
+                </select><BR><BR>
+                <label for="">ADDRESS:</label>
+                <textarea cols="20" rows="5" required></textarea>
+                <br><br>
+                <label for="">GENDER:</label>
+                <input type="radio" name="GENDER" required>male
+                <input type="radio" name="GENDER" required>female <br><br>
+                <label for="">MARRIED?</label>
+                <input type="radio" name="MARRIED?" required>yes
+                <input type="radio" name="MARRIED?" required>no <br><br>
+                <input type="checkbox" required>This all information correct
+                <br><br><button formaction="last page.html" >SUBMIT</button>
+                <input type="reset">
+            </form>
+        </fieldset>
+        <br><br>
+        <h3><a href="ITEMS.html">Back</a></h3>
+    </center><br><br><br><br><br><br><br><br><br><br><br>
+    <hr>
+    <pre><h3>© 2026 Dinesh J. All rights reserved. This project and its content may not be copied, reproduced, or distributed without permission.</h3></pre>
+    <hr>
+
+    <script>
+
+    function submited()
+{
+    let phone =
+    document.getElementById("phone").value;
+
+    if(phone.length < 10 || phone.length > 10)
+    {
+        alert("Invalid Phone Number");
+        return false;
+    }
+
+    else
+    {
+        alert("Form Submitted Successfully");
+        return true;
+    }
+}
+function confirmSubmit()
+{
+    return confirm("Are you sure to submit?");
+}
+
+    </script>
+
+
+</body>
+
+</html>
